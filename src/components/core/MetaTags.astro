@@ -2,7 +2,6 @@
 import { getImage } from "@astrojs/image";
 import { getRelativeUrlByFilePath } from "~/utils/directories";
 
-import GoogleAnalytics from "~/components/core/GoogleAnalytics.astro";
 import defaultImageSrc from "~/assets/images/default.png";
 
 import { SITE } from "~/config.mjs";
@@ -62,11 +61,5 @@ const image =
 {image && <meta name="twitter:image" content={image} />}
 
 <Fonts />
-
-<!-- Google Site Verification -->
-{SITE.googleSiteVerificationId && <meta name="google-site-verification" content={SITE.googleSiteVerificationId} />}
-
-<!-- Google Analytics -->
-{SITE.googleAnalyticsId && <GoogleAnalytics id={SITE.googleAnalyticsId} partytown={true} />}
 
 <ExtraMetaTags />

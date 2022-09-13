@@ -6,8 +6,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: colors.blue,
-        secondary: colors.pink,
+        primary: colors.teal,
+        secondary: colors.blue,
       },
       fontFamily: {
         sans: ["'IBM Plex Sans'", ...defaultTheme.fontFamily.sans],
@@ -18,13 +18,13 @@ module.exports = {
   darkMode: "class",
 };
 
-/* 
+/*
 
   Alternative tailwind.config.js
-  
+
   NOTE: Add this fonts to <head>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700&display=swap" rel="stylesheet" />
-*/  
+*/
 
 // module.exports = {
 //   content: ["./src/**/*.{astro,html,js,jsx,md,svelte,ts,tsx,vue}"],
