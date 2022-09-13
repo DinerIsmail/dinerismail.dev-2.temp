@@ -1,8 +1,8 @@
-import getReadingTime from "reading-time";
+import getReadingTime from "reading-time"
 
 export const getNormalizedPost = async (post) => {
-  const { frontmatter, compiledContent, rawContent, file } = post;
-  const ID = file.split("/").pop().split(".").shift();
+  const { frontmatter, compiledContent, rawContent, file } = post
+  const ID = file.split("/").pop().split(".").shift()
 
   return {
     id: ID,
@@ -23,5 +23,5 @@ export const getNormalizedPost = async (post) => {
     category: frontmatter.category,
     tags: frontmatter.tags,
     readingTime: Math.ceil(getReadingTime(rawContent()).minutes),
-  };
-};
+  }
+}

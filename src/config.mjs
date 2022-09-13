@@ -5,8 +5,9 @@ export const SITE = {
   basePathname: "/",
 
   title: "Diner Ismail",
-  description: "I'm a web developer working on projects that make the world a better place.",
-};
+  description:
+    "I'm a web developer working on projects that make the world a better place.",
+}
 
 export const BLOG = {
   disabled: false,
@@ -24,4 +25,4 @@ export const BLOG = {
     disabled: false,
     slug: "tag",
   },
-};
+}

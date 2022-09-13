@@ -1,17 +1,19 @@
 ---
-import Picture from "~/components/core/Picture.astro";
-import PostTags from "~/components/atoms/Tags.astro";
+import Picture from "~/components/core/Picture.astro"
+import PostTags from "~/components/atoms/Tags.astro"
 
-import { getPermalink } from "~/utils/permalinks";
-import { findImage } from "~/utils/images";
-import { getFormattedDate } from "~/utils/utils";
+import { getPermalink } from "~/utils/permalinks"
+import { findImage } from "~/utils/images"
+import { getFormattedDate } from "~/utils/utils"
 
-const { post } = Astro.props;
+const { post } = Astro.props
 
-const image = await findImage(post.image);
+const image = await findImage(post.image)
 ---
 
-<article class="max-w-md mx-auto md:max-w-none grid md:grid-cols-2 gap-6 md:gap-8">
+<article
+  class="max-w-md mx-auto md:max-w-none grid md:grid-cols-2 gap-6 md:gap-8"
+>
   <a class="relative block group" href="#0">
     <div
       class="relative h-0 pb-[56.25%] md:pb-[75%] md:h-80 lg:pb-[56.25%] overflow-hidden bg-gray-400 dark:bg-slate-700 rounded shadow-lg"
@@ -43,7 +45,8 @@ const image = await findImage(post.image);
     <footer class="mt-4">
       <div>
         <span class="text-gray-500 dark:text-slate-400">
-          <time datetime={post.pubDate}>{getFormattedDate(post.pubDate)}</time> ~ {Math.ceil(post.readingTime)} min read
+          <time datetime={post.pubDate}>{getFormattedDate(post.pubDate)}</time> ~
+          {Math.ceil(post.readingTime)} min read
         </span>
       </div>
       <div class="mt-4">

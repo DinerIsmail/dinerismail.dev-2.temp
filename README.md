@@ -43,10 +43,9 @@
 
 ## Demo
 
-[👉 astrowind.vercel.app](https://astrowind.vercel.app/) 
+[👉 astrowind.vercel.app](https://astrowind.vercel.app/)
 
 <br>
-
 
 ## Getting started
 
@@ -138,14 +137,14 @@ export const SITE = {
   description: "This is the homepage description of Example",
 
   googleAnalyticsId: false, // or "G-XXXXXXXXXX",
-  googleSiteVerificationId: false // or some value,
-};
+  googleSiteVerificationId: false, // or some value,
+}
 
 export const BLOG = {
   disabled: false,
   slug: "blog", // you can change this to "articles" (/articles)
 
-  postsWithoutBlogSlug: true, // true (/some-slug), false (/blog/some-slug), 
+  postsWithoutBlogSlug: true, // true (/some-slug), false (/blog/some-slug),
   postsPerPage: 6,
 
   category: {
@@ -157,8 +156,7 @@ export const BLOG = {
     disabled: false,
     slug: "tag",
   },
-};
-
+}
 ```
 
 <br>
@@ -193,41 +191,40 @@ Clone this repository on own GitHub account and deploy to Vercel:
 
 ## Roadmap
 
-- *Project*:
+- _Project_:
   - **(DONE)** Reduce the complexity in the components folder and simplify the other folders to make it very easy to use.
   - Create simple and clear strategy to get template updates
   - Move specific configurations to a specialized file
   - Fix some bugs with prettier
   - Make the use of images clean and intuitive
-- *SEO*:
+- _SEO_:
   - **(DONE)** Add support to easily manage SEO meta-tags (title, description, canonical, social sharing, ...)
-- *Blog*:
+- _Blog_:
   - **(DONE)** Support to Fast and SEO friendly blog
   - **(DONE)** Add support for categories and tags.
   - Improve blog design
   - Create component or utilities for latest posts
   - Create component or utilities for related posts
-  - Add more *shortcodes* or *embed* functions to posts in Markdown: (eg video, tweet...)
-- *More widgets*:
+  - Add more _shortcodes_ or _embed_ functions to posts in Markdown: (eg video, tweet...)
+- _More widgets_:
   - ~~Add more Tailwind components useful for most scenarios (Features, Contact, Call to Actions, Content, FAQs ...)~~
   - Create external library or place with useful Tailwind components
-- *More Examples*: Add commonly used example pages (Ex: About, Terms, Services...)
-- *Documentation*: Create detailed documentation with best practices and redesign tips
+- _More Examples_: Add commonly used example pages (Ex: About, Terms, Services...)
+- _Documentation_: Create detailed documentation with best practices and redesign tips
 
 <br>
 
 ## Frequently Asked Questions
 
-- 
-- 
 -
-
+-
+-
 
 <br>
 
 ## Contributing
 
-If you have any idea, suggestions or find any bugs, feel free to open a discussion, an issue or create a pull request. 
+If you have any idea, suggestions or find any bugs, feel free to open a discussion, an issue or create a pull request.
 That would be very useful for all of us and we would be happy to listen and take action.
 
 ## Acknowledgements

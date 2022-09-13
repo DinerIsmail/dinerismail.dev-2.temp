@@ -1,16 +1,16 @@
-import path from "path";
-import { fileURLToPath } from "url";
+import path from "path"
+import { fileURLToPath } from "url"
 
-import { defineConfig } from "astro/config";
+import { defineConfig } from "astro/config"
 
-import tailwind from "@astrojs/tailwind";
-import sitemap from "@astrojs/sitemap";
-import image from "@astrojs/image";
-import partytown from "@astrojs/partytown";
+import tailwind from "@astrojs/tailwind"
+import sitemap from "@astrojs/sitemap"
+import image from "@astrojs/image"
+import partytown from "@astrojs/partytown"
 
-import { SITE } from "./src/config.mjs";
+import { SITE } from "./src/config.mjs"
 
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
 // https://astro.build/config
 export default defineConfig({
@@ -44,6 +44,6 @@ export default defineConfig({
   },
 
   server: {
-    port: 8080
-  }
-});
+    port: 8080,
+  },
+})
