@@ -1,7 +1,6 @@
-import getReadingTime from "reading-time"
-
 const getNormalizedPost = async (post) => {
-  const { frontmatter, compiledContent, rawContent, file } = post
+  const { frontmatter, compiledContent, Content, rawContent, file } = post
+  console.log(post.default())
   const ID = file.split("/").pop().split(".").shift()
 
   return {
@@ -15,19 +14,19 @@ const getNormalizedPost = async (post) => {
 
     title: frontmatter.title,
     description: frontmatter.description,
-    body: compiledContent(),
+    body: post.Content,
     image: frontmatter.image,
 
     excerpt: frontmatter.excerpt,
     authors: frontmatter.authors,
     category: frontmatter.category,
     tags: frontmatter.tags,
-    readingTime: Math.ceil(getReadingTime(rawContent()).minutes),
+    customProperty: frontmatter.customProperty,
   }
 }
 
 const load = async function () {
-  const posts = import.meta.glob("~/data/posts/**/*.md", {
+  const posts = import.meta.glob("~/data/posts/**/*.mdx", {
     eager: true,
   })
 
